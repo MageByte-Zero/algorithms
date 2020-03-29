@@ -169,7 +169,7 @@ public class SingleLinkedList<E> extends AbstractList<E> {
             cur = cur.next;
         }
         // 只有一个节点
-        if (head == last && item.equals(head.item)) {
+        if (size == 1) {
             head = null;
             last = null;
             x.item = null;// help gc
@@ -181,6 +181,7 @@ public class SingleLinkedList<E> extends AbstractList<E> {
         // 如果被删除的元素在尾结点
         if (item.equals(l.item)) {
             last = prev;
+            cur.next = null;
             prev.next = null;
         } else if (item.equals(head.item)) {
             // 在头结点

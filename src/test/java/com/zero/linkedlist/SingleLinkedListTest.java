@@ -41,6 +41,7 @@ public class SingleLinkedListTest {
     void testAddIndex() {
         singleLinkedList.add(0, 1);
         singleLinkedList.add(0, 0);
+        singleLinkedList.add(1, 2);
     }
 
     @DisplayName("addFirst 表头添加测试")
