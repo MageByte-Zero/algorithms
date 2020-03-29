@@ -181,17 +181,13 @@ public class SingleLinkedList<E> extends AbstractList<E> {
         // 如果被删除的元素在尾结点
         if (item.equals(l.item)) {
             last = prev;
-            cur.next = null;
             prev.next = null;
         } else if (item.equals(head.item)) {
             // 在头结点
-            head = next;
-            cur.next = null;
-            prev.next = null;
+            head = head.next;
         } else {
             // 被删除的元素不在头结点也不在尾节点，则把前驱节点的next 指向 被删除元素的 next 指针
             prev.next = next;
-            cur.next = null;
         }
         size--;
         x.item = null;// help gc
