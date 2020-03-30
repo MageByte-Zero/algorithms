@@ -82,7 +82,7 @@ public class SingleLinkedListTest {
         Assertions.assertEquals(2, result);
     }
 
-    @DisplayName("testRemoveObject 删除只有头结点")
+    @DisplayName("testRemoveObject 删除")
     @Test
     void testRemoveObjectWithHead() {
         singleLinkedList.add(1);

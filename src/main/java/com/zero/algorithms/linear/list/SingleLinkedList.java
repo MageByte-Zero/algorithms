@@ -159,39 +159,30 @@ public class SingleLinkedList<E> extends AbstractList<E> {
      */
     E unlink(Node<E> x) {
         final E item = x.item;
-        Node<E> l = this.last;
         final Node<E> next = x.next;
-        Node<E> cur = this.head;
-        Node<E> prev = this.head;
-        // 寻找被删除node cur 指针以及 cur 的上一个节点指针 prev
+        Node<E> cur = head;
+        Node<E> prev = null;
+        // 寻找被删除 node cur 节点以及 cur 的上一个节点 prev
         while (!cur.item.equals(item)) {
             prev = cur;
             cur = cur.next;
         }
-        // 只有一个节点
-        if (size == 1) {
-            head = null;
-            last = null;
-            x.item = null;// help gc
-            x.next = null;
-            size--;
-            return item;
-        }
-
-        // 如果被删除的元素在尾结点
-        if (item.equals(l.item)) {
-            last = prev;
-            prev.next = null;
-        } else if (item.equals(head.item)) {
-            // 在头结点
-            head = head.next;
+        // 当只有一个节点的时候 prev  = null,next = null
+        // 如果删除的是头结点，则 head = x.next，否则 prev.next = next 打断与被删除节点的联系
+        if (prev == null) {
+            head = next;
         } else {
-            // 被删除的元素不在头结点也不在尾节点，则把前驱节点的next 指向 被删除元素的 next 指针
             prev.next = next;
         }
+        // 如果删除最后一个节点，则 last 指向 prev，否则打断被删除的节点 next = null
+        if (next == null) {
+            last = prev;
+        } else {
+            x.next = null;
+        }
+
         size--;
-        x.item = null;// help gc
-        x.next = null;
+        x.item = null;
         return item;
     }
 
