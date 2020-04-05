@@ -55,4 +55,10 @@ public class ArrayStackTest {
         System.out.println(arrayStack.toString());
     }
 
+    @Test
+    public void testSize() {
+        arrayStack.push(1);
+        Assertions.assertEquals(1, arrayStack.size());
+    }
+
 }

@@ -18,7 +18,7 @@ public class ArrayStack<T> {
      */
     private final int limit;
     /**
-     * 栈顶元素下标，默认没有数据 -1
+     * 栈元素格式，默认没有数据 -1
      */
     private int index;
     /**
@@ -92,7 +92,7 @@ public class ArrayStack<T> {
     }
 
     public int size() {
-        return this.index;
+        return this.index + 1;
     }
 
     /**
