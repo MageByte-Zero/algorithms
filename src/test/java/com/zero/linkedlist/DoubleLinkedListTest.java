@@ -5,7 +5,7 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-@DisplayName("单向链表测试")
+@DisplayName("双向链表测试")
 public class DoubleLinkedListTest {
     DoubleLinkedList<Integer> doubleLinkedList = new DoubleLinkedList<>();
 
