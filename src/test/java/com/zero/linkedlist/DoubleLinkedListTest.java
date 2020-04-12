@@ -86,7 +86,7 @@ public class DoubleLinkedListTest {
 
     @DisplayName("testRemoveObject 删除")
     @Test
-    void testRemoveObjectWithHead() {
+    void testRemoveObject() {
         doubleLinkedList.add(1);
         doubleLinkedList.add(2);
         doubleLinkedList.add(3);
