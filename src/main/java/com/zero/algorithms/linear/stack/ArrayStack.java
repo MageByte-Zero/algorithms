@@ -7,7 +7,13 @@ import java.util.Arrays;
  * @param <T>
  */
 public class ArrayStack<T> {
+    /**
+     * 默认大小
+     */
     public static final int DEFAULT_SIZE = 128;
+    /**
+     * 默认最大限制，-1 表示无限制
+     */
     private static final int DEFAULT_LIMIT = -1;
     /**
      * 初始化栈大小
@@ -18,7 +24,7 @@ public class ArrayStack<T> {
      */
     private final int limit;
     /**
-     * 栈元素格式，默认没有数据 -1
+     * 指向栈顶元素下标，默认没有数据 -1
      */
     private int index;
     /**
