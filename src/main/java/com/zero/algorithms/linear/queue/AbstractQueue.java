@@ -1,4 +1,4 @@
-package com.zero.algorithms.linear.list;
+package com.zero.algorithms.linear.queue;
 
 /**
  * 队列抽象

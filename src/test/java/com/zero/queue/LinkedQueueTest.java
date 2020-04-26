@@ -1,6 +1,6 @@
 package com.zero.queue;
 
-import com.zero.algorithms.linear.list.LinkedQueue;
+import com.zero.algorithms.linear.queue.LinkedQueue;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

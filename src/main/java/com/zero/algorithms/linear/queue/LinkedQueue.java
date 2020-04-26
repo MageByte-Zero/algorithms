@@ -1,4 +1,6 @@
-package com.zero.algorithms.linear.list;
+package com.zero.algorithms.linear.queue;
+
+import com.zero.algorithms.linear.list.SingleLinkedList;
 
 public class LinkedQueue<E> extends AbstractQueue<E> implements Queue<E> {
 

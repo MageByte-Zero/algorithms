@@ -1,6 +1,6 @@
 package com.zero.queue;
 
-import com.zero.algorithms.linear.list.ArrayCircleQueue;
+import com.zero.algorithms.linear.queue.ArrayCircleQueue;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
