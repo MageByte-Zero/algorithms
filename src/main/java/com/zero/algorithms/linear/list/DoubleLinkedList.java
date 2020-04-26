@@ -8,7 +8,7 @@ import java.util.Objects;
  *
  * @param <E>
  */
-public class DoubleLinkedList<E> extends AbstractList<E> implements Queue<E> {
+public class DoubleLinkedList<E> extends AbstractList<E> {
     transient int size = 0;
 
     /**

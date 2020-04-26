@@ -2,12 +2,27 @@ package com.zero.algorithms.linear.list;
 
 public interface Queue<E> {
     /**
-     * Retrieves and removes the head of this queue.  This method differs
-     * from {@link #poll poll} only in that it throws an exception if this
-     * queue is empty.
-     *
-     * @return the head of this queue
-     * @throws NoSuchElementException if this queue is empty
+     * 队头元素出队
+     * @return
      */
-    E remove();
+    E dequeue();
+
+    /**
+     * 元素队尾入队
+     * @param e 元素
+     * @return true if add last success
+     */
+    boolean enqueue(E e);
+
+    /**
+     * 队列是否满了
+     * @return
+     */
+    boolean isFull();
+
+    /**
+     * 队列是否是空的
+     * @return
+     */
+    boolean isEmpty();
 }

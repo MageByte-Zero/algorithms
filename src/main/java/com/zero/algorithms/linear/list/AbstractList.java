@@ -18,10 +18,12 @@ public abstract class AbstractList<E> implements List<E> {
         return size() == 0;
     }
 
+    @Override
     public void add(int index, E element) {
         throw new UnsupportedOperationException();
     }
 
+    @Override
     public E remove(int index) {
         throw new UnsupportedOperationException();
     }
@@ -63,6 +65,7 @@ public abstract class AbstractList<E> implements List<E> {
     private boolean isElementIndex(int index) {
         return index >= 0 && index < size();
     }
+
 
 
 

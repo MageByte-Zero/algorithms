@@ -90,6 +90,7 @@ public class SingleLinkedListTest {
         singleLinkedList.add(3);
         singleLinkedList.addFirst(0);
         singleLinkedList.remove(0);
+        singleLinkedList.remove();
         singleLinkedList.remove(Integer.valueOf(3));
         singleLinkedList.remove(Integer.valueOf(2));
         singleLinkedList.remove(Integer.valueOf(1));

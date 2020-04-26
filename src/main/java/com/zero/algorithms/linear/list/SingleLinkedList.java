@@ -4,6 +4,8 @@ import java.util.Objects;
 
 public class SingleLinkedList<E> extends AbstractList<E> {
 
+
+
     transient int size = 0;
     /**
      * pointer to head node
@@ -152,6 +154,12 @@ public class SingleLinkedList<E> extends AbstractList<E> {
     public E remove(int index) {
         checkElementIndex(index);
         return unlink(node(index));
+    }
+
+    @Override
+    public E remove() {
+        checkElementIndex(0);
+        return remove(0);
     }
 
     /**

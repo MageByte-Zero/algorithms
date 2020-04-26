@@ -61,6 +61,12 @@ public interface List<E> {
     boolean remove(Object o);
 
     /**
+     * 删除头结点
+     * @return 被删除节点元素
+     */
+    E remove();
+
+    /**
      * Removes the element at the specified position in this list (optional
      * operation).  Shifts any subsequent elements to the left (subtracts one
      * from their indices).  Returns the element that was removed from the

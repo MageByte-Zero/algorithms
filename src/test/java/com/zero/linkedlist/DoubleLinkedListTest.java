@@ -91,6 +91,7 @@ public class DoubleLinkedListTest {
         doubleLinkedList.add(2);
         doubleLinkedList.add(3);
         doubleLinkedList.addFirst(0);
+        doubleLinkedList.remove();
         doubleLinkedList.remove(0);
         doubleLinkedList.remove(Integer.valueOf(3));
         doubleLinkedList.remove(Integer.valueOf(2));
