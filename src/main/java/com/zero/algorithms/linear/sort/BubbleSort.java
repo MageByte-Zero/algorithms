@@ -18,7 +18,7 @@ public class BubbleSort implements ComparisonSort {
         for (int i = 0; i < length; i++) {
             // 设定标记，当没有数据需要交换的时候则说明已经有序，提前退出外部循环
             boolean hasChange = false;
-            for (int j = 0; j < length - i - 1; j++) {
+            for (int j = 0; j < (length - 1) - i ; j++) {
                 if (result[j] > result[j + 1]) {
                     // 数据交换
                     int temp = result[j];
