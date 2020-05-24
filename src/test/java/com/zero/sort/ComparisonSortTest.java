@@ -25,7 +25,7 @@ public class ComparisonSortTest {
     @Test
     public void testInsertSort() {
         InsertionSort insertionSort = new InsertionSort();
-        int[] array = {3, 5, 4, 2, 1, 6, 5};
+        int[] array = {3, 5, 4, 2, 1, 6, 5, 2};
         int[] sort = insertionSort.sort(array);
         System.out.println(Arrays.toString(sort));
     }
