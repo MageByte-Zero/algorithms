@@ -1,6 +1,7 @@
 package com.zero.sort;
 
 import com.zero.algorithms.linear.sort.BubbleSort;
+import com.zero.algorithms.linear.sort.InsertionSort;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -13,9 +14,18 @@ public class ComparisonSortTest {
     @Test
     public void testBubbleSort() {
         BubbleSort bubbleSort = new BubbleSort();
-        int[] array = {3, 5, 4, 1, 2, 6};
+        int[] array = {3, 5, 4, 2, 1, 6};
         int[] sort = bubbleSort.sort(array);
         System.out.println(Arrays.toString(sort));
 
+    }
+
+    @DisplayName("插入排序")
+    @Test
+    public void testInsertSort() {
+        InsertionSort insertionSort = new InsertionSort();
+        int[] array = {3, 5, 4, 2, 1, 6, 5};
+        int[] sort = insertionSort.sort(array);
+        System.out.println(Arrays.toString(sort));
     }
 }
