@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * 冒泡排序: 时间复杂度 O(n²)，最坏时间复杂度 O(n²)，最好时间复杂度 O(n)，平均时间复杂度 O(n²)
- * 空间复杂度 O(1)
+ * 空间复杂度 O(1)，稳定排序算法
  */
 public class BubbleSort implements ComparisonSort {
     @Override

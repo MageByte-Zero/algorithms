@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * 插入排序：时间复杂度 O(n²),平均时间复杂度 O(n²),最好时间复杂度 O(n)，
- * 最坏时间复杂度 O(n²),空间时间复杂度 O(1)
+ * 最坏时间复杂度 O(n²),空间时间复杂度 O(1).稳定排序算法。
  */
 public class InsertionSort implements ComparisonSort {
     /**
