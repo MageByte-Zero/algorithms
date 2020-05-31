@@ -46,6 +46,7 @@ public class MergeSort implements ComparisonSort {
                 right = Arrays.copyOfRange(right, 1, right.length);
             }
         }
+        // 以下两个只有一个会执行
         while (left.length > 0) {
             result[i++] = left[0];
             left = Arrays.copyOfRange(left, 1, left.length);
