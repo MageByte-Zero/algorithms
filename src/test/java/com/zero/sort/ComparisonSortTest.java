@@ -1,9 +1,6 @@
 package com.zero.sort;
 
-import com.zero.algorithms.linear.sort.BubbleSort;
-import com.zero.algorithms.linear.sort.InsertionSort;
-import com.zero.algorithms.linear.sort.MergeSort;
-import com.zero.algorithms.linear.sort.SelectionSort;
+import com.zero.algorithms.linear.sort.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -49,6 +46,14 @@ public class ComparisonSortTest {
     @Test
     public void testMergeSort() {
         MergeSort mergeSort = new MergeSort();
+        int[] sort = mergeSort.sort(array);
+        System.out.println(Arrays.toString(sort));
+    }
+
+    @DisplayName("快速排序")
+    @Test
+    public void testQuickSort() {
+        QuickSort mergeSort = new QuickSort();
         int[] sort = mergeSort.sort(array);
         System.out.println(Arrays.toString(sort));
     }
