@@ -21,7 +21,7 @@ public class QuickSort implements ComparisonSort {
      * @param r 结束下标
      * @return
      */
-    private void quickSortInternal(int[] arr, int p, int r) {
+    public void quickSortInternal(int[] arr, int p, int r) {
         if (p >= r) {
             return;
         }
