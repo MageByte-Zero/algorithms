@@ -2,6 +2,7 @@ package com.zero.sort;
 
 
 import com.zero.algorithms.linear.sort.BucketSort;
+import com.zero.algorithms.linear.sort.CountingSort;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -33,6 +34,14 @@ public class LineSortTest {
         BucketSort bucketSort = new BucketSort();
         // 100 数据，10 个桶
         int[] sort = bucketSort.sort(array, 10);
+        System.out.println(Arrays.toString(sort));
+    }
+
+    @DisplayName("计数排序")
+    @Test
+    public void testCountingSort() {
+        CountingSort countingSort = new CountingSort();
+        int[] sort = countingSort.sort(array);
         System.out.println(Arrays.toString(sort));
     }
 }
